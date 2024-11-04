@@ -60,6 +60,9 @@ for _, c in ipairs({',', '.', '(', '[', '{', '=', '\\', '"', '\'', '<CR>'}) do
    map('i', c, c .. "<C-g>u", { noremap = true })
 end
 
+-- redo  
+map("n", "<S-u>", "<cmd>redo<cr>", { desc = "Redo last change" })
+
 -- Use operator pending mode to visually select entire buffer, e.g.
 --    d<A-a> = delete entire buffer
 --    y<A-a> = yank entire buffer
